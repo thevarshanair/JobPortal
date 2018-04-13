@@ -7,9 +7,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import com.java.service.LoginService;
+
 import java.lang.String;
- 
-import com.java.DBA.LoginService;
 
 public class LoginServlet extends HttpServlet {
     

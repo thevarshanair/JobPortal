@@ -8,39 +8,55 @@
 		<meta name="keywords" content="circular progress button, progress indicator, svg line animation, radial progress, css" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-			<title>Circular Progress Button with SVG</title>
+			<title>Search Jobs</title>
+	<link rel="stylesheet" type="text/css" href="css/SearchNormalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/SearchDemo.css" />
+		<link rel="stylesheet" type="text/css" href="css/SearchComponent.css" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
+		<script src="js/Bmodernizr.custom.js"></script>
 	</head>
 
-<body>
-	<div class="container">
-	<section class="content content--related fa-align-center">
-				
-			 <div align="center"><input type="text" class="fa-search"> 
-			<a align="right" href="SearchHome.html">Search</a></div>
-				
-			</section>
-		<div class="box">
+<body bgcolor="#FFFFFF">
+	<div class="header">
+  <a href="#default" class="logo">CompanyLogo</a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+	<a href="index.html" class="login">Login/Signup</a>
+					<a href="index2.html">Terms</a>
+					<a href="index6.html">Updates</a>
+					<a href="index7.html">Health-care Engineering</a>  
+  </div>
+</div>
+	
+	
 		<!-- progress button -->
-		<div class="progress-button">
-						<button><span>Submit</span></button>
+	<section align="center">
+		<div class="progress-button" align="center">
+			<div align="center">
+				<input id="rcorners1" type="text" class="fa-search" style="width: 360px; height: 75px;" > 			
+			</div>
+			<br><br><br>
+					
+			 <div align="center">
+						<button><span>Search</span></button>
 						<svg class="progress-circle" width="70" height="70"><path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
 						<svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
 						<svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
 					</div><!-- /progress-button -->
 					<!-- progress button -->
-					<div class="progress-button">
-						<button><span>Submit</span></button>
-						<svg class="progress-circle" width="70" height="70"><path d="m35,2.5c17.955803,0 32.5,14.544199 32.5,32.5c0,17.955803 -14.544197,32.5 -32.5,32.5c-17.955803,0 -32.5,-14.544197 -32.5,-32.5c0,-17.955801 14.544197,-32.5 32.5,-32.5z"/></svg>
-						<svg class="checkmark" width="70" height="70"><path d="m31.5,46.5l15.3,-23.2"/><path d="m31.5,46.5l-8.5,-7.1"/></svg>
-						<svg class="cross" width="70" height="70"><path d="m35,35l-9.3,-9.3"/><path d="m35,35l9.3,9.3"/><path d="m35,35l-9.3,9.3"/><path d="m35,35l9.3,-9.3"/></svg>
-					</div><!-- /progress-button -->
-				</div>
+			<br><br><br>
+			<div align="right"> <a href="">Filter Search  </a> &nbsp; &nbsp; <a href="">  Upload Resume</a>
+		</div>
+		</div>
+			 
+		
+	
 <script src="js/classie.js"></script>
-		<script src="js/uiProgressButton.js"></script>
+		<script src="js/BuiProgressButton.js"></script>
 		<script>
 			[].slice.call( document.querySelectorAll( '.progress-button' ) ).forEach( function( bttn, pos ) {
 				new UIProgressButton( bttn, {
@@ -49,7 +65,6 @@
 							interval = setInterval( function() {
 								progress = Math.min( progress + Math.random() * 0.1, 1 );
 								instance.setProgress( progress );
-
 								if( progress === 1 ) {
 									instance.stop( pos === 1 || pos === 3 ? -1 : 1 );
 									clearInterval( interval );

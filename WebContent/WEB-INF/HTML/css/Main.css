@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+.appBackground {
+    position: relative;
+    background-image: url("chinh-le-duc-264152-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
